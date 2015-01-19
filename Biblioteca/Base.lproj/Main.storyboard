@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Lhr-wJ-93Z">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Livros-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LivrosViewController" customModule="Biblioteca" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shelf" translatesAutoresizingMaskIntoConstraints="NO" id="L21-5M-Ugi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-8W-muL">
+                                <rect key="frame" x="75" y="117" width="85" height="110"/>
+                                <state key="normal" backgroundImage="Livro1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiB-B9-hUZ">
+                                <rect key="frame" x="215" y="117" width="85" height="110"/>
+                                <state key="normal" backgroundImage="Livro3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b84-Xk-aI8">
+                                <rect key="frame" x="75" y="328" width="85" height="110"/>
+                                <state key="normal" backgroundImage="Livro2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lI-E0-diS">
+                                <rect key="frame" x="215" y="328" width="85" height="110"/>
+                                <state key="normal" backgroundImage="Livro4">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="L21-5M-Ugi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6Wq-UZ-cW9"/>
+                            <constraint firstItem="L21-5M-Ugi" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="CBj-ck-F0W"/>
+                            <constraint firstAttribute="trailing" secondItem="L21-5M-Ugi" secondAttribute="trailing" id="es8-mw-XwL"/>
+                            <constraint firstAttribute="bottom" secondItem="L21-5M-Ugi" secondAttribute="bottom" id="nJI-Hy-qJy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Livros" image="livros" id="x6U-uz-mta"/>
+                    <connections>
+                        <segue destination="5pW-Ni-Jfb" kind="presentation" identifier="livroParaDetalheSegue" id="a4K-Fr-Rfd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="337"/>
+        </scene>
+        <!--Detalhe Livro View Controller-->
+        <scene sceneID="jNR-Ia-H61">
+            <objects>
+                <viewController id="5pW-Ni-Jfb" customClass="DetalheLivroViewController" customModule="Biblioteca" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dBn-yH-ahS"/>
+                        <viewControllerLayoutGuide type="bottom" id="y7E-7I-bCp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q5i-DT-5cQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3LB-D6-PyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="337"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9e7-id-STn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Lhr-wJ-93Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="pvX-w6-Zcu">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="VLX-6H-QVK"/>
+                        <segue destination="Bv1-oJ-CKh" kind="relationship" relationship="viewControllers" id="V3u-RW-Ekr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKE-cH-ZJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="203" y="710"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="9yH-Zk-gP2">
+            <objects>
+                <tableViewController id="LoQ-sV-LAE" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sHF-QG-r4z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZKX-La-PFU">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZKX-La-PFU" id="0F7-Nc-Pbd">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LoQ-sV-LAE" id="YZl-Fa-KrU"/>
+                            <outlet property="delegate" destination="LoQ-sV-LAE" id="uWM-KM-9gp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="KEa-Ea-BWI"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XEf-ON-ryK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1904" y="1129"/>
+        </scene>
+        <!--Filmes-->
+        <scene sceneID="aHU-au-dhJ">
+            <objects>
+                <navigationController id="Bv1-oJ-CKh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Filmes" image="filmes" id="Ai1-IP-Dwn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="k4t-VV-bD1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LoQ-sV-LAE" kind="relationship" relationship="rootViewController" id="S4R-vc-YSV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rub-dU-VGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072" y="1129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Livro1" width="85" height="110"/>
+        <image name="Livro2" width="85" height="110"/>
+        <image name="Livro3" width="85" height="110"/>
+        <image name="Livro4" width="85" height="110"/>
+        <image name="filmes" width="32" height="32"/>
+        <image name="livros" width="32" height="32"/>
+        <image name="shelf" width="320" height="480"/>
+    </resources>
+</document>
