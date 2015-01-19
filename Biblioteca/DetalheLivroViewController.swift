@@ -9,10 +9,14 @@ import UIKit
 
 class DetalheLivroViewController: UIViewController {
 
+    var nomeLivro: String = ""
+
+    @IBOutlet weak var livroLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        livroLabel.text = nomeLivro
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,8 +29,6 @@ class DetalheLivroViewController: UIViewController {
         dismissViewControllerAnimated(true, completion:nil)
     }
     
-    
-
     /*
     // MARK: - Navigation
 

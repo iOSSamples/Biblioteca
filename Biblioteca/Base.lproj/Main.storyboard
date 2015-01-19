@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-8W-muL">
-                                <rect key="frame" x="75" y="117" width="85" height="110"/>
+                                <rect key="frame" x="57" y="116" width="85" height="110"/>
                                 <state key="normal" backgroundImage="Livro1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,8 +28,8 @@
                                     <action selector="visualizarLivro:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q6a-ET-3qz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiB-B9-hUZ">
-                                <rect key="frame" x="215" y="117" width="85" height="110"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiB-B9-hUZ">
+                                <rect key="frame" x="197" y="116" width="85" height="110"/>
                                 <state key="normal" backgroundImage="Livro3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -37,8 +37,8 @@
                                     <action selector="visualizarLivro:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BQz-Hu-1Ap"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b84-Xk-aI8">
-                                <rect key="frame" x="75" y="328" width="85" height="110"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b84-Xk-aI8">
+                                <rect key="frame" x="57" y="327" width="85" height="110"/>
                                 <state key="normal" backgroundImage="Livro2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -46,8 +46,8 @@
                                     <action selector="visualizarLivro:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aV8-cc-3FD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lI-E0-diS">
-                                <rect key="frame" x="215" y="328" width="85" height="110"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lI-E0-diS">
+                                <rect key="frame" x="197" y="327" width="85" height="110"/>
                                 <state key="normal" backgroundImage="Livro4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -94,9 +94,18 @@
                                     <action selector="fechar:" destination="5pW-Ni-Jfb" eventType="touchUpInside" id="cCh-4B-DFy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ir0-gx-CcD">
+                                <rect key="frame" x="16" y="87" width="462" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="livroLabel" destination="Ir0-gx-CcD" id="KE4-Td-QIq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LB-D6-PyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

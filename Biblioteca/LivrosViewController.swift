@@ -9,6 +9,11 @@ import UIKit
 
 class LivrosViewController: UIViewController {
 
+    private var livrosArr = ["Futebol - Uma janela para o Brasil",
+        "A terra dos sonhos",
+        "Manga",
+        "Como se faz"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,20 +24,30 @@ class LivrosViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func visualizarLivro(sender: UIButton) {
         performSegueWithIdentifier("livroParaDetalheSegue", sender: sender)
     }
 
-    /*
     // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+        
+        //pega uma referência pra a próxima viewController através da propriedade destinationViewController da segue
+        
+        var vc = segue.destinationViewController as DetalheLivroViewController
+        
+        //pega a TAG do botão que executou a segue e a utiliza como índice do array para recuperar o nome do livro
+        if let i = sender?.tag {
+            
+            //passa para a propriedade da próxima VC, o nome do livro do array
+            vc.nomeLivro = livrosArr[i]
+        }
     }
-    */
 
 }
+
+
+
+
+
+
 
