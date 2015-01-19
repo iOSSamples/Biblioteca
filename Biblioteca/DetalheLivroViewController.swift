@@ -19,6 +19,12 @@ class DetalheLivroViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    
+    @IBAction func fechar(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion:nil)
+    }
+    
     
 
     /*
