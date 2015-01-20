@@ -7,8 +7,10 @@
 
 import UIKit
 
-class LivrosViewController: UIViewController {
+class LivrosViewController: UIViewController, DetalheLivroViewControllerDelegate {
 
+    @IBOutlet weak var livroFavoritoLabel: UILabel!
+    
     private var livrosArr = ["Futebol - Uma janela para o Brasil",
         "A terra dos sonhos",
         "Manga",
@@ -40,7 +42,13 @@ class LivrosViewController: UIViewController {
             
             //passa para a propriedade da próxima VC, o nome do livro do array
             vc.nomeLivro = livrosArr[i]
+            vc.delegate = self
         }
+    }
+    
+    func livroFavoritado(livro: String) {
+        
+        livroFavoritoLabel.text = livro
     }
 
 }

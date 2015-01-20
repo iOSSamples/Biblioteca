@@ -55,6 +55,18 @@
                                     <action selector="visualizarLivro:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Ro-gC-wZf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorito:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjA-DX-D1G">
+                                <rect key="frame" x="57" y="58" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wkd-FY-MfT">
+                                <rect key="frame" x="142" y="57" width="302" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -66,6 +78,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Livros" image="livros" id="x6U-uz-mta"/>
                     <connections>
+                        <outlet property="livroFavoritoLabel" destination="wkd-FY-MfT" id="Hiz-FK-caG"/>
                         <segue destination="5pW-Ni-Jfb" kind="presentation" identifier="livroParaDetalheSegue" id="a4K-Fr-Rfd"/>
                     </connections>
                 </viewController>
@@ -91,7 +104,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="fechar:" destination="5pW-Ni-Jfb" eventType="touchUpInside" id="cCh-4B-DFy"/>
+                                    <action selector="fechar" destination="5pW-Ni-Jfb" eventType="touchUpInside" id="f6s-7L-rRb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ir0-gx-CcD">
@@ -100,6 +113,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-Fm-i6f">
+                                <rect key="frame" x="16" y="155" width="156" height="30"/>
+                                <state key="normal" title="Maracar como favorito">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="marcarFavorito" destination="5pW-Ni-Jfb" eventType="touchUpInside" id="GcB-Jc-VbY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

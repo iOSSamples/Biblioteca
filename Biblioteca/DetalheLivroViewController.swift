@@ -7,15 +7,21 @@
 
 import UIKit
 
+protocol DetalheLivroViewControllerDelegate:class{
+    
+    func livroFavoritado (livro:String)
+}
+
 class DetalheLivroViewController: UIViewController {
 
     var nomeLivro: String = ""
+
+    weak var delegate: DetalheLivroViewControllerDelegate?
 
     @IBOutlet weak var livroLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         livroLabel.text = nomeLivro
     }
 
@@ -23,11 +29,16 @@ class DetalheLivroViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
-    @IBAction func fechar(sender: UIButton) {
+    @IBAction func fechar() {
         dismissViewControllerAnimated(true, completion:nil)
     }
+    
+    @IBAction func marcarFavorito() {
+        delegate?.livroFavoritado(nomeLivro)
+        fechar()
+    }
+    
     
     /*
     // MARK: - Navigation
