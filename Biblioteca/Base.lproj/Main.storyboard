@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015" y="293"/>
+            <point key="canvasLocation" x="1079" y="389"/>
         </scene>
         <!--Detalhe Livro View Controller-->
         <scene sceneID="jNR-Ia-H61">
@@ -123,7 +123,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.98907618977765344" green="1" blue="0.87630850864681187" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="livroLabel" destination="Ir0-gx-CcD" id="KE4-Td-QIq"/>
@@ -131,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LB-D6-PyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2040" y="260"/>
+            <point key="canvasLocation" x="1832" y="389"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="9e7-id-STn">
@@ -152,32 +152,138 @@
             </objects>
             <point key="canvasLocation" x="203" y="710"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Filmes View Controller-->
         <scene sceneID="9yH-Zk-gP2">
             <objects>
-                <tableViewController id="LoQ-sV-LAE" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sHF-QG-r4z">
+                <tableViewController id="LoQ-sV-LAE" userLabel="Filmes View Controller" customClass="FilmesTableViewController" customModule="Biblioteca" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sHF-QG-r4z">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ZKX-La-PFU">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZKX-La-PFU" id="0F7-Nc-Pbd">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
+                        <sections>
+                            <tableViewSection id="a7l-wl-adV">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellID" rowHeight="130" id="2Ia-5C-mdx">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Ia-5C-mdx" id="ywr-Mi-DGE">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w46-W4-S4G">
+                                                    <rect key="frame" x="49" y="10" width="215" height="104"/>
+                                                    <state key="normal" image="filme3">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="visualizarFilme:" destination="LoQ-sV-LAE" eventType="touchUpInside" id="GeO-lF-Ion"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellID" rowHeight="130" id="drN-5q-Ffp">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="drN-5q-Ffp" id="8E3-jo-zsw">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo6-pS-sjF">
+                                                    <rect key="frame" x="52" y="10" width="215" height="107"/>
+                                                    <state key="normal" image="filme2">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="visualizarFilme:" destination="LoQ-sV-LAE" eventType="touchUpInside" id="EvH-7B-3hf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellID" rowHeight="130" id="7cE-nr-7on">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7cE-nr-7on" id="XCV-kc-5Nx">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWd-ZP-j2q">
+                                                    <rect key="frame" x="80" y="11" width="160" height="107"/>
+                                                    <state key="normal" image="filme1">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="visualizarFilme:" destination="LoQ-sV-LAE" eventType="touchUpInside" id="jjz-cI-32n"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CellID" rowHeight="130" id="nDn-Vx-NFA">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nDn-Vx-NFA" id="Cjx-OH-E2O">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMG-R3-TlN">
+                                                    <rect key="frame" x="75" y="10" width="161" height="108"/>
+                                                    <state key="normal" image="filme4">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="visualizarFilme:" destination="LoQ-sV-LAE" eventType="touchUpInside" id="GUQ-Xn-Fwz"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="LoQ-sV-LAE" id="YZl-Fa-KrU"/>
                             <outlet property="delegate" destination="LoQ-sV-LAE" id="uWM-KM-9gp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="KEa-Ea-BWI"/>
+                    <navigationItem key="navigationItem" title="Filmes" id="KEa-Ea-BWI"/>
+                    <connections>
+                        <segue destination="CUY-OQ-FcM" kind="show" identifier="filmeParaDetalheSegue" id="wo5-Ym-w7U"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEf-ON-ryK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904" y="1129"/>
+            <point key="canvasLocation" x="1832" y="1129"/>
+        </scene>
+        <!--Detalhe Filme View Controller-->
+        <scene sceneID="4zF-pi-M6w">
+            <objects>
+                <viewController id="CUY-OQ-FcM" customClass="DetalheFilmeViewController" customModule="Biblioteca" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jVf-aJ-nlH"/>
+                        <viewControllerLayoutGuide type="bottom" id="FCZ-BL-Pp6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cFI-RE-WyE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbE-X9-50f">
+                                <rect key="frame" x="16" y="92" width="342" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77037155710000005" green="0.89696691669999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="filmeLabel" destination="UbE-X9-50f" id="Spl-8y-WaI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pzj-oZ-ol4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2584" y="1129"/>
         </scene>
         <!--Filmes-->
         <scene sceneID="aHU-au-dhJ">
@@ -202,6 +308,10 @@
         <image name="Livro2" width="85" height="110"/>
         <image name="Livro3" width="85" height="110"/>
         <image name="Livro4" width="85" height="110"/>
+        <image name="filme1" width="160" height="107"/>
+        <image name="filme2" width="160" height="107"/>
+        <image name="filme3" width="160" height="104"/>
+        <image name="filme4" width="161" height="108"/>
         <image name="filmes" width="32" height="32"/>
         <image name="livros" width="32" height="32"/>
         <image name="shelf" width="320" height="480"/>

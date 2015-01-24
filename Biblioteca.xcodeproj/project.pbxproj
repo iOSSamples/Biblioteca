@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24223D4C1A6DE954001208FE /* FilmesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24223D4B1A6DE954001208FE /* FilmesTableViewController.swift */; };
+		24223D4E1A6DEEB1001208FE /* DetalheFilmeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24223D4D1A6DEEB1001208FE /* DetalheFilmeViewController.swift */; };
 		244DE6581A6DA089006C387B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244DE6571A6DA089006C387B /* AppDelegate.swift */; };
 		244DE65A1A6DA089006C387B /* LivrosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244DE6591A6DA089006C387B /* LivrosViewController.swift */; };
 		244DE65D1A6DA089006C387B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244DE65B1A6DA089006C387B /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24223D4B1A6DE954001208FE /* FilmesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmesTableViewController.swift; sourceTree = "<group>"; };
+		24223D4D1A6DEEB1001208FE /* DetalheFilmeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalheFilmeViewController.swift; sourceTree = "<group>"; };
 		244DE6521A6DA089006C387B /* Biblioteca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biblioteca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244DE6561A6DA089006C387B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		244DE6571A6DA089006C387B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				244DE6571A6DA089006C387B /* AppDelegate.swift */,
 				244DE6591A6DA089006C387B /* LivrosViewController.swift */,
 				244DE6771A6DA172006C387B /* DetalheLivroViewController.swift */,
+				24223D4B1A6DE954001208FE /* FilmesTableViewController.swift */,
+				24223D4D1A6DEEB1001208FE /* DetalheFilmeViewController.swift */,
 				244DE65B1A6DA089006C387B /* Main.storyboard */,
 				244DE65E1A6DA089006C387B /* Images.xcassets */,
 				244DE6601A6DA089006C387B /* LaunchScreen.xib */,
@@ -216,6 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				244DE6781A6DA172006C387B /* DetalheLivroViewController.swift in Sources */,
+				24223D4C1A6DE954001208FE /* FilmesTableViewController.swift in Sources */,
+				24223D4E1A6DEEB1001208FE /* DetalheFilmeViewController.swift in Sources */,
 				244DE65A1A6DA089006C387B /* LivrosViewController.swift in Sources */,
 				244DE6581A6DA089006C387B /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +417,7 @@
 				244DE6731A6DA089006C387B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		244DE6741A6DA089006C387B /* Build configuration list for PBXNativeTarget "BibliotecaTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				244DE6761A6DA089006C387B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
